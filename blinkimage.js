@@ -1,7 +1,20 @@
 import React, {Component} from 'react';
-import {View, Image, Text} from 'react-native';
-import { ReloadInstructions } from 'react-native/Libraries/NewAppScreen';
+import {View, Image, Text, StyleSheet} from 'react-native';
 
+//Defining the style here
+const styles = StyleSheet.create(
+  {
+    blue: {
+      color: 'blue',
+      fontSize: 20,
+      fontWeight: 'bold'
+    },
+
+    red:{
+      color: 'red'
+    }
+  }
+);
 class BlinkImage extends Component{
   componentDidMount(){
     //Switch the state every second
@@ -19,7 +32,7 @@ class BlinkImage extends Component{
     }
     return (
       <View>
-      <Text>{this.props.title}</Text>
+      <Text style={styles.blue}>{this.props.title}</Text>
       <Image source={this.props.img} style={{width: 193, height: 110}}/>
       </View>
     );
@@ -40,3 +53,4 @@ class BlinkImage extends Component{
       );
     }
   }
+
