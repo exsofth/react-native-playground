@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, Image} from 'react-native';
-
+//this is the main class
 export default class HelloWorld extends Component{
   render(){
     let pic = {
