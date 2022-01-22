@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, StyleSheet} from 'react-native';
 
 //Defining the style here
+//Style
 const styles = StyleSheet.create(
   {
     blue: {

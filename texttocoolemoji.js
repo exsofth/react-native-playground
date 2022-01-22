@@ -6,7 +6,7 @@ export default class TranslateTextToCoolEmoji extends Component{
     super(props);
     this.state = {text: ''};
   }
-
+  //Cette fonction est primordiale dans un composant javascript
   render(){
     return(
       <View style={{padding:9}}>
